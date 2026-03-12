@@ -207,6 +207,19 @@
       display: block;
     }
 
+    .hero-company-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(3.8rem, 5.2rem, 5.4rem);
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      margin-bottom: 24px;
+      animation: fadeUp 1s 0.2s ease both;
+      color: var(--gold);
+      font-weight: bold;
+
+
+    }
+
     .hero-subtitle {
       color: var(--text-muted);
       font-size: 1.05rem;
@@ -1243,6 +1256,13 @@
         font-size: clamp(2.4rem, 8vw, 3rem);
       }
 
+      .hero-company-name {
+        font-size: clamp(2.8rem, 10vw, 5rem);
+        margin-bottom: 2px;
+        letter-spacing: normal;
+
+      }
+
       .hero-subtitle {
         font-size: 0.95rem;
         margin-left: auto;
@@ -1364,6 +1384,7 @@
     <div class="hero-grid-lines"></div>
     <div class="hero-content">
       <div class="hero-badge"><span></span> Chennai, Tamil Nadu · Est. 2025</div>
+      <h2 class="hero-company-name">HK Workforce Solutions</h2>
       <h1 class="hero-title">Reliable Workforce.<br><em>Accurate Payroll.</em>HR Compliance.</h1>
       <p class="hero-subtitle">HK Workforce Solutions is Chennai's trusted manpower supply and payroll processing agency
         — handling ESI, PF, compliance, and contract staffing so you can focus on growth.</p>
