@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found | HK Workforce Solutions</title>
+  <meta name="robots" content="noindex, follow">
+  <link rel="icon" type="image/png" href="glogo.png" sizes="48x48">
+  <meta name="theme-color" content="#C9A84C">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .error-page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 5%;
+      position: relative;
+    }
+    .error-page::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background: radial-gradient(ellipse 60% 60% at 50% 40%, rgba(201,168,76,0.07) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .error-code {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(6rem, 18vw, 12rem);
+      font-weight: 300;
+      color: rgba(201,168,76,0.18);
+      line-height: 1;
+      margin-bottom: 0;
+      letter-spacing: -0.02em;
+    }
+    .error-logo {
+      width: 80px;
+      height: auto;
+      margin-bottom: 28px;
+      filter: drop-shadow(0 0 16px rgba(201,168,76,0.35));
+    }
+    .error-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.6rem, 4vw, 2.6rem);
+      font-weight: 300;
+      color: var(--text);
+      margin-bottom: 16px;
+      margin-top: -16px;
+    }
+    .error-title strong {
+      color: var(--gold);
+      font-weight: 600;
+    }
+    .error-desc {
+      color: var(--text-muted);
+      font-size: 1rem;
+      max-width: 420px;
+      line-height: 1.75;
+      margin-bottom: 40px;
+    }
+    .error-actions {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .error-footer {
+      margin-top: 64px;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="error-page">
+    <img src="glogo.png" alt="HK Workforce Solutions" class="error-logo">
+    <div class="error-code">404</div>
+    <h1 class="error-title">Page <strong>Not Found</strong></h1>
+    <p class="error-desc">The page you are looking for doesn't exist or may have been moved. Let's get you back on track.</p>
+    <div class="error-actions">
+      <a href="/" class="btn-primary">← Back to Home</a>
+      <a href="/#contact" class="btn-outline">Contact Us</a>
+    </div>
+    <p class="error-footer">© 2026 <span style="color:var(--gold)">HK Workforce Solutions</span> · Chennai, Tamil Nadu</p>
+  </div>
+</body>
+
+</html>
